@@ -3,9 +3,252 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>my portfolio - fiza</title>
+    <title>Fiza Fathima — Personal Portfolio</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+
+    <!-- Header / Navigation -->
+    <header class="site-header">
+        <div class="nav-container">
+            <a href="#" class="logo">F.F.</a>
+            <nav class="nav-links">
+                <a href="#hero">Home</a>
+                <a href="#about">About</a>
+                <a href="#passions">Passions</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#contact" class="nav-cta">Get in Touch</a>
+            </nav>
+            <div class="hamburger">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu">
+        <span class="close-menu">&times;</span>
+        <a href="#hero" class="mobile-link">Home</a>
+        <a href="#about" class="mobile-link">About</a>
+        <a href="#passions" class="mobile-link">Passions</a>
+        <a href="#gallery" class="mobile-link">Gallery</a>
+        <a href="#contact" class="mobile-link">Get in Touch</a>
+    </div>
+
+    <!-- 1. Hero Section -->
+    <section id="hero" class="hero-section">
+        <div class="hero-bg-glow"></div>
+        <div class="hero-content">
+            <span class="hero-tag">WELCOME TO MY WORLD</span>
+            <h1 class="hero-title">Fiza Fathima</h1>
+            <p class="hero-subtitle">Student | Dreamer | Dance Enthusiast</p>
+            <p class="hero-desc">Expressing myself through movement, discovering stories through cinema, and creating my own journey along the way.</p>
+            <div class="hero-buttons">
+                <a href="#about" class="btn btn-primary">Explore My World</a>
+                <a href="#passions" class="btn btn-secondary">Get to Know Me</a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll Down</span>
+            <i class="fa-solid fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- 2. About Me Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="sub-heading">DISCOVER</span>
+                <h2 class="main-heading">A Little About Me</h2>
+                <div class="gold-line"></div>
+            </div>
+            
+            <div class="about-grid">
+                <div class="about-image-wrapper">
+                    <div class="image-frame">
+                        <!-- Portrait Placeholder -->
+                        <div class="portrait-placeholder">
+                            <i class="fa-solid fa-user-tie-hair"></i>
+                            <span>Fiza Fathima</span>
+                        </div>
+                    </div>
+                    <div class="decorative-box"></div>
+                </div>
+                
+                <div class="about-text-content">
+                    <h3>An artistic soul shaping her own story.</h3>
+                    <p>Hi, I'm Fiza Fathima, a student with a creative soul and a passion for self-expression. Dance allows me to express emotions beyond words, while movies take me into different worlds, cultures, and stories. I'm always learning, exploring new ideas, and discovering more about myself.</p>
+                    
+                    <div class="about-highlights">
+                        <div class="highlight-item">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                            <div>
+                                <h4>Education</h4>
+                                <p>Dedicated student focused on continuous growth and academics.</p>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fa-solid fa-film"></i>
+                            <div>
+                                <h4>Cinematic Soul</h4>
+                                <p>An avid cinephile exploring diverse narratives and filmmaking aesthetics.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. Passions Section (Dance & Movies) -->
+    <section id="passions" class="passions-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="sub-heading">WHAT DRIVES ME</span>
+                <h2 class="main-heading">Art & Expression</h2>
+                <div class="gold-line"></div>
+            </div>
+
+            <div class="passions-grid">
+                <!-- Dance Card -->
+                <div class="passion-card">
+                    <div class="card-bg dance-bg"></div>
+                    <div class="card-content">
+                        <div class="card-icon"><i class="fa-solid fa-child-reaching"></i></div>
+                        <h3>The Art of Dance</h3>
+                        <p>Dance is my heartbeat and my ultimate outlet. Through every rhythm and movement, I find freedom, discipline, and a profound way to tell stories without speaking a single word.</p>
+                        <ul class="passion-tags">
+                            <li>Rhythm</li>
+                            <li>Grace</li>
+                            <li>Expression</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Movies Card -->
+                <div class="passion-card">
+                    <div class="card-bg movie-bg"></div>
+                    <div class="card-content">
+                        <div class="card-icon"><i class="fa-solid fa-clapperboard"></i></div>
+                        <h3>Cinematic Worlds</h3>
+                        <p>Watching movies is more than a hobby—it's an exploration of human empathy. Cinema introduces me to breathtaking perspectives, timeless emotions, and brilliant visual artistry.</p>
+                        <ul class="passion-tags">
+                            <li>Storytelling</li>
+                            <li>Aesthetics</li>
+                            <li>Empathy</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Gallery / Aesthetic Showcase -->
+    <section id="gallery" class="gallery-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="sub-heading">MOMENTS & MOOD</span>
+                <h2 class="main-heading">Visual Journal</h2>
+                <div class="gold-line"></div>
+            </div>
+
+            <div class="gallery-grid">
+                <div class="gallery-item tall">
+                    <div class="gallery-overlay">
+                        <span>Grace in Motion</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-overlay">
+                        <span>Cinematic Escapes</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-overlay">
+                        <span>Creative Reflections</span>
+                    </div>
+                </div>
+                <div class="gallery-item wide">
+                    <div class="gallery-overlay">
+                        <span>Living with Intention & Elegance</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="contact-box">
+                <span class="sub-heading">LET'S CONNECT</span>
+                <h2>Get in Touch</h2>
+                <p>Want to talk about dance, share movie recommendations, or just say hello? My inbox is always open.</p>
+                
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i class="fa-solid fa-envelope"></i>
+                        <span>fiza.fathima@example.com</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span>Worldwide / Creative Space</span>
+                    </div>
+                </div>
+
+                <div class="social-links">
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+                    <a href="#"><i class="fa-brands fa-spotify"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <p>&copy; 2026 Fiza Fathima. Crafted with elegance & passion.</p>
+    </footer>
+
+    <!-- Script for interactivity -->
+    <script>
+        // Mobile Navigation Toggle
+        const hamburger = document.querySelector('.hamburger');
+        const mobileMenu = document.querySelector('.mobile-menu');
+        const closeMenu = document.querySelector('.close-menu');
+        const mobileLinks = document.querySelectorAll('.mobile-link');
+
+        hamburger.addEventListener('click', () => {
+            mobileMenu.classList.add('active');
+        });
+
+        closeMenu.addEventListener('click', () => {
+            mobileMenu.classList.remove('active');
+        });
+
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.remove('active');
+            });
+        });
+
+        // Header scroll effect
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('.site-header');
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+    </script>
 </body>
 </html>
